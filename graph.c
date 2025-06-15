@@ -90,8 +90,8 @@ gk_graph_t *gk_graph_Read(char *filename, int format, int hasvals,
   ssize_t i, k, l;
   size_t nfields, nvtxs, nedges, fmt, ncon, lnlen;
   ssize_t *xadj;
-  int32_t ival, *iinds=NULL, *jinds=NULL, *ivals=NULL, *adjncy, *iadjwgt;
-  float fval, *fvals=NULL, *fadjwgt;
+  int32_t ival, *iinds=NULL, *jinds=NULL, *ivals=NULL, *adjncy, *iadjwgt=NULL;
+  float fval, *fvals=NULL, *fadjwgt=NULL;
   int readsizes=0, readwgts=0, readvals=0;
   char *line=NULL, *head, *tail, fmtstr[256];
   FILE *fpin=NULL;

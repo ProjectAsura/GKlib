@@ -18,6 +18,12 @@ This file contains various functions that perform I/O.
 
 #include <GKlib.h>
 
+#if MSC
+#include <io.h>
+#define write _write
+#define read  _read
+#endif
+
 /*************************************************************************
 * This function opens a file
 **************************************************************************/
