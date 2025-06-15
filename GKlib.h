@@ -19,6 +19,10 @@
 #define __ICC__
 #endif
 
+#if defined(_MSC_VER)
+#define USE_GKREGEX
+#define __thread __declspec(thread)
+#endif
 
 #include "gk_arch.h" /*!< This should be here, prior to the includes */
 

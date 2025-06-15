@@ -40,6 +40,8 @@
 #pragma once
 #endif
 
+#ifndef _STDINT
+
 #include <limits.h>
 
 // For Visual Studio 6 in C++ mode wrap <wchar.h> include with 'extern "C++" {}'
@@ -218,5 +220,6 @@ typedef uint64_t  uintmax_t;
 
 #endif // __STDC_CONSTANT_MACROS ]
 
+#endif// _STDINT
 
 #endif // _MSC_STDINT_H_ ]
